@@ -3,7 +3,7 @@
 alphabet=['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
           'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 def encryption(plain_text,shift_key): #hello h=7
-    cipher_text= ""
+    cipher_text=""
     for char in plain_text:
         position=alphabet.index(char)
         new_position=(position+shift_key)%26
@@ -11,7 +11,7 @@ def encryption(plain_text,shift_key): #hello h=7
     print(f"Here's is the text after encryption: {cipher_text}")
 
 def decryption(cipher_text,shift_key): #khoor
-    plain_text= ""
+    plain_text=""
     for char in cipher_text: #char=k
         position=alphabet.index(char)
         new_position=(position-shift_key)%26
